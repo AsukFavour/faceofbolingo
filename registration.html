@@ -5,21 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Face of Bolingo Experia</title>
     <meta name="description" content="Commemorating the African Woman">
-      <!-- CSS
-    ================================================== -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/registration.css">
 
-    <!-- favicons
-    ================================================== -->
+    <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-
 </head>
 <body>
     <div class="container">
-        <h1>Pageant Registration</h1>
+        <h1>Pre-registration Form</h1>
         <form id="registrationForm">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
@@ -28,16 +25,13 @@
             <input type="email" id="email" name="email" required>
 
             <label for="age">Age:</label>
-            <input type="number" id="age" name="age" required>
+            <input type="number" id="age" name="age" min="18" max="65" required>
 
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" required>
 
             <label for="address">Address:</label>
             <textarea id="address" name="address" required></textarea>
-
-            <label for="photo">Upload Photo:</label>
-            <input type="file" id="photo" name="photo" accept="image/*" required>
 
             <button class="btn btn--primary" type="submit">Register</button>
         </form>

@@ -8,14 +8,18 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     let age = form.age.value;
     let phone = form.phone.value;
     let address = form.address.value;
-    let photo = form.photo.files[0];
 
-    if (name && email && age && phone && address && photo) {
-        // Form is valid
-        alert("Registration successful!");
+    if (name && email && age && phone && address) {
+        if (age >= 18 && age <= 65) {
+            // Form is valid
+            alert("Registration successful!");
 
-        // Redirect to WhatsApp group link page
-        window.location.href = "whatsapp-link.html";
+            // Redirect to WhatsApp group link page
+            window.location.href = "whatsapp-link.html";
+        } else {
+            // Age is not within the valid range
+            alert("Age must be between 18 and 65.");
+        }
     } else {
         // Form is not valid
         alert("Please fill in all the fields.");
