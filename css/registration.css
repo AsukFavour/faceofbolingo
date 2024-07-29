@@ -1,12 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background: url('../images/slides/24.jpeg') no-repeat center center fixed;
+    background: url('../images/slides/img4.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height:100%;
     margin: 0;
+    
 }
 
 .container {
@@ -16,8 +17,24 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 400px;
-    margin: 0 10px;
+    margin: 40px 10px;
     box-sizing: border-box;
+}
+
+.home-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #000;
 }
 
 h1 {
@@ -38,6 +55,18 @@ input, textarea, button {
     margin-top: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+.checkbox-group{
+    display: flex;
+    flex-direction: row;
+}
+
+#ageConfirm{
+    padding: 3px;
+    margin: 10px;
+    width: auto;
+    justify-content: right;
 }
 
 button {
