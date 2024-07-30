@@ -346,6 +346,7 @@
     margin-top: 10px;
     font-size: 16px;
     color: #333;
+    font-weight: 900;
   }
 
   @media (max-width: 768px) {
@@ -368,8 +369,8 @@
       .sponsor-item .image img {
         height: 70px; /* Adjust height for mobile view as needed */
         margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+        margin-right: auto;
+        width: 50%;
       }
     
       .sponsor-item .image p {
